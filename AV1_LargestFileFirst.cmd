@@ -32,7 +32,7 @@ del "%root_path:"=%%~n0.ps1"
 
 :: If plex cleaner not found then download and put it with script
 if not exist "%root_path:"=%win-x64\Tools\FfMpeg\bin\ffmpeg.exe" (
-	call "%root_path:"=%PlexCleaner_265.cmd" "" "0" "0" "0"
+	call "%root_path:"=%PlexCleaner_AV1.cmd" "" "0" "0" "0"
 )
 
 :: start /b /wait "%root_path:"=%PlexCleaner_265.cmd" "%plex_folder:"=%\%%i" "0" "0" "0"
