@@ -23,6 +23,8 @@ svt_av1
 svt_av1_10bit
 ```
 
+# Unknown i am not sure if these are available yet
+
 ## Nvidia GPU Encoding
 
 ```
