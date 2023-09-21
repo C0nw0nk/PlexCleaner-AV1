@@ -10,7 +10,7 @@ Run `AV1_LargestFileFirst.cmd` and enjoy It will start with the largest video fi
 
 # How to change settings
 
-Edit `plexcleaner.json` this line specificly https://github.com/C0nw0nk/PlexCleaner-H265/blob/main/win-x64/PlexCleaner.json#L141
+Edit `plexcleaner.json` this line specificly https://github.com/C0nw0nk/PlexCleaner-AV1/blob/main/win-x64/PlexCleaner.json#L141
 
 For example you will see by default `"Video": "svt_av1_10bit` i use NVIDIA GPU for AV1 encoding you can change it to AMD VAAPI CPU what ever you prefer.
 
