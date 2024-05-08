@@ -1,6 +1,6 @@
 @echo off & setLocal EnableDelayedExpansion
 
-set search_limit=20
+set search_limit=999999
 
 :: Instead of just closing the window after our automated tasking we pause to view and check once your happy you can set this to 0
 :: 1 enabled
@@ -10,7 +10,7 @@ set pause_window=1
 :: If you want this script to not exit once finished and after task complete / wait interval passed recheck plex folders in a loop
 :: 1 enabled
 :: 0 disabled
-set loop=1
+set loop=0
 
 :: End Edit DO NOT TOUCH ANYTHING BELOW THIS POINT UNLESS YOU KNOW WHAT YOUR DOING!
 
