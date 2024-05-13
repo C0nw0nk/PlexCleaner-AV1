@@ -36,9 +36,9 @@ set looping=0
 TITLE PlexCleaner - AV1
 
 :: Make script configurable via command line with arguements example
-:: "C:\path\PlexCleaner.cmd" "\\NAS\path" "pause_window" "wait_interval" "looping" 2^>nul
+:: "C:\path\PlexCleaner_AV1.cmd" "\\NAS\path" "pause_window" "wait_interval" "looping" 2^>nul
 :: Working example
-:: "C:\path\PlexCleaner.cmd" "\\NAS\path" "1" "120" "1" 2^>nul
+:: "C:\path\PlexCleaner_AV1.cmd" "\\NAS\path" "1" "120" "1" 2^>nul
 
 if "%~1"=="" goto :script_arguments_not_defined
 set media_path="%~1"
@@ -75,6 +75,10 @@ echo >"%root_path:"=%win-x64\PlexCleaner.log"
 )
 
 "%root_path:"=%win-x64\PlexCleaner" deinterlace --settingsfile "%root_path:"=%win-x64\PlexCleaner.json" --logfile "%root_path:"=%win-x64\PlexCleaner.log" --mediafiles "%media_path:"=%"
+
+if exist "%root_path:"=%DisableForceSubtitles.cmd" (
+call "%root_path:"=%DisableForceSubtitles.cmd" "%media_path:"=%" "1" "1" "0" "0" "0" "0"
+)
 
 ::End PlexCleaner code
 
